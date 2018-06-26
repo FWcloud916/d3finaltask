@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+</head>
+<body>
+    <div id="container">
+        <div id='app'>
+            <div class="Bbox">
+                <div id='xCH' class="box">
+                    <h1>Xaixs:{{xkind}}</h1>
+                    
+                    <label for="xstars">stars
+                        <input type="radio" id="xstars" value="0" v-model="xch" v-on:click="chCheck($event)">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    
+                    <label for="xgoods">goods
+                        <input type="radio" id="xgoods" value="1" v-model="xch" v-on:click="chCheck($event)" disabled="disabled">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    
+                    <label for="xviews">views
+                        <input type="radio" id="xviews" value="2" v-model="xch" v-on:click="chCheck($event)">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    
+                    <label for="xforks">forks
+                        <input type="radio" id="xforks" value="3" v-model="xch" v-on:click="chCheck($event)">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <div id="Xslider" class="slider" style="width:300px"></div>
+                    <div class="pbox">Xaixs:  [min: {{Xmin}} , Max: {{XMax}}]</div>
+                </div>
+
+                <div id='yCH' class="box">
+                    <h1>Yaixs:{{ykind}}</h1>
+                    
+                    <label for="ystars">stars
+                        <input type="radio" id="ystars" value="0" v-model="ych" v-on:click="chCheck($event)" disabled="disabled">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    
+                    <label for="ygoods">goods
+                        <input type="radio" id="ygoods" value="1" v-model="ych" v-on:click="chCheck($event)">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    
+                    <label for="yviews">views
+                        <input type="radio" id="yviews" value="2" v-model="ych" v-on:click="chCheck($event)">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    
+                    <label for="yforks">forks
+                        <input type="radio" id="yforks" value="3" v-model="ych" v-on:click="chCheck($event)">
+                        <span class="checkmark"></span>
+                    </label>
+                    
+                    <div id="Yslider" class="slider" style="width:300px"></div>
+                    <div class="pbox">Yaixs: [min: {{Ymin}} , Max: {{YMax}}]</div>
+                </div>
+            </div>
+            <div class="draw"></div>
+        </div>
+    </div>
+
+    <script src="./js/nouislider.min.js"></script>
+    <script src="./js/d3.min.js"></script>
+    <script src="./js/vue.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

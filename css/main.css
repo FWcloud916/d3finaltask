@@ -1,0 +1,112 @@
+*{
+    margin:0 auto;
+    font-family: 'Roboto', sans-serif ,'蘋方體','微軟正黑體';
+}
+body{
+    background-color: #F2F2F2
+}
+#container{
+    width:1320px;
+    height:860px;
+    background-color: #F2F2F2
+}
+.chart{
+	
+    padding:30px;
+    padding-left: 45px;
+}
+
+.noUi-connect{
+    background-color:#00305e;
+}
+.Bbox{
+    height:100%;
+    float: left;
+}
+.box{
+    margin:30px 10px;
+    width:400px;
+    height:400px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #F8F8F8;
+    border:0px;
+    border-radius:5px;
+}
+.box h1{
+    padding-top:30px;
+}
+.box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+label{
+    display:block;
+    padding:10px 30px;
+    position: relative;
+}
+.checkmark {
+    position: absolute;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.box:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.box input:disabled  ~ .checkmark {
+    background-color: #656668
+}
+
+.box input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.box input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.box .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+.pbox{
+    position: absolute;
+    left:calc(50% - 150px);
+    width:300px;
+    text-align: center;
+}
+.draw{
+    width:860px;
+    height:860px;
+    float: left;
+    
+}
+
+.slider{
+    margin:30px;
+}
